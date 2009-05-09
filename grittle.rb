@@ -23,9 +23,7 @@ end
 
 def make_line_between_graphics(commit, parent)
   linescript = 'make new line at end of graphics with properties {point list:{{255.7701, 269.5171}, {229.7299, 172.4829}}, head type:\"FilledArrow\", line type:curved}'
-  `osascript -e "tell application \\"Omnigraffle Professional 5\\"" -e "tell canvas of front window" -e "#{linescript}" -e "end tell" -e "end tell"`
-  `osascript -e "tell application \\"Omnigraffle Professional 5\\"" -e "tell canvas of front window" -e "set source of graphic -1 to #{commit}" -e "end tell" -e "end tell"`
-  `osascript -e "tell application \\"Omnigraffle Professional 5\\"" -e "tell canvas of front window" -e "set destination of graphic -1 to #{parent}" -e "end tell" -e "end tell"`  
+  `osascript -e "tell application \\"Omnigraffle Professional 5\\"" -e "tell canvas of front window" -e "#{linescript}" -e "set source of graphic -1 to #{commit}" -e "set destination of graphic -1 to #{parent}" -e "end tell" -e "end tell"`
 end
 
 def layout()
