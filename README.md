@@ -1,7 +1,5 @@
 ## Grittle - Git Visualisations for OmniGraffle
 
-### Your OmniGraffle needs to be configured to open a default window with a blank template - else the script will fail.
-
 * Everything is pre-alpha
 * Performance patches _very_ welcome.
 
@@ -13,4 +11,6 @@ Preliminary abstraction has been performed to caputre the generated applescript 
 
 ## Test
 
-```ruby grittle.rb .```
+Your OmniGraffle needs to be configured to open a default window with a blank template - else the script will fail.
+
+`ruby grittle.rb .`
