@@ -1,9 +1,0 @@
-Grittle - Git Visualisations for OmniGraffle
---------------------------------------------
-
-* Everything is pre-alpha
-* Performance patches _very_ welcome.
-
-Performance is so agonising right now because we shell out to `osascript(1)` once for every graphic (and three times for every line).
-
-If this script simply generated a huge Applescript, I'm sure things would go ten times faster. It's a bit tricky, though.
